@@ -1,0 +1,28 @@
+/* Sayfa genel stilleri */
+body {
+  background-color: #f4f4f9;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Başlık stili */
+.ana-baslik {
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Sınıf (Class) Seçici */
+.aciklama {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+/* ID Seçici */
+#ozel-metin {
+  background-color: #ffeaa7;
+  padding: 10px;
+  border-left: 5px solid #fdcb6e;
+  font-weight: bold;
+}
