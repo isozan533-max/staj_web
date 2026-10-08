@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* Grid Ana Konteyner */
+.grid-konteyner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 eşit sütun oluşturur */
+  gap: 20px; /* Izgara elemanları arası boşluk */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Grid Eleman Stilleri */
+.grid-eleman {
+  background-color: #3498db;
+  color: white;
+  padding: 40px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.eleman-1 {
+  background-color: #e74c3c;
+}
+.eleman-2 {
+  background-color: #e67e22;
+}
+.eleman-3 {
+  background-color: #f1c40f;
+  color: #333;
+}
+.eleman-4 {
+  background-color: #2ecc71;
+}
+.eleman-5 {
+  background-color: #1abc9c;
+}
+.eleman-6 {
+  background-color: #9b59b6;
+}
