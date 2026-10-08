@@ -1,0 +1,31 @@
+/* Tüm elemanlar için standart genişlik hesaplama */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+/* Genel Kutu Stili */
+.kutu {
+  width: 300px;
+  background-color: #ffffff;
+  padding: 20px; /* İç Boşluk */
+  border: 3px solid #3498db; /* Kenarlık */
+  margin-bottom: 25px; /* Alt Dış Boşluk */
+  border-radius: 8px; /* Köşeleri Yuvarlama */
+}
+
+/* Kutu 1 Özel Stil */
+.kutu-1 {
+  background-color: #e8f4f8;
+}
+
+/* Kutu 2 Özel Stil */
+.kutu-2 {
+  background-color: #eafaf1;
+  border-color: #2ecc71;
+}
