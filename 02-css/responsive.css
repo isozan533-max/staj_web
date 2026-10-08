@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Varsayılan (Masaüstü) Düzen */
+.konteyner {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.kutu {
+  flex: 1;
+  background-color: #3498db;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+/* Mobil Ekranlar İçin Media Query (768px ve altı) */
+@media (max-width: 768px) {
+  .konteyner {
+    flex-direction: column; /* Yan yana olan kutuları alt alta dizer */
+  }
+
+  .kutu {
+    background-color: #e74c3c; /* Mobilde arka plan rengini değiştirir */
+  }
+}
