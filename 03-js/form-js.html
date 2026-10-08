@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Form Yönetimi</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    .hata { color: red; font-size: 14px; margin-top: 5px; }
+    .basari { color: green; font-weight: bold; margin-top: 10px; }
+    .form-grup { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+
+  <h2>Kullanıcı Kayıt Formu</h2>
+
+  <form id="kayitFormu">
+    <div class="form-grup">
+      <label for="kullaniciAd">Kullanıcı Adı:</label><br>
+      <input type="text" id="kullaniciAd">
+      <div id="hataMesaji" class="hata"></div>
+    </div>
+    
+    <button type="submit">Kaydol</button>
+  </form>
+
+  <div id="sonuc" class="basari"></div>
+
+  <script src="form-js.js"></script>
+</body>
+</html>
