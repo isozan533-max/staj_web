@@ -1,8 +1,8 @@
 // 1. Basit Nesne (Object) Oluşturma
 let ogrenci = {
-  ad: "Ahmet",
-  soyad: "Yılmaz",
-  yas: 22,
+  ad: "ozan",
+  soyad: "bulmuş",
+  yas: 16,
   bolum: "Yazılım Mühendisliği",
   stajyerMi: true,
 };
