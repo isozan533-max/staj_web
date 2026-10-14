@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listeler</title>
+    <style>
+      nav ul {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+      }
+      .cay-gorsel {
+        width: 400px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Listeler Örneği</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="listeler.html">Listeler</a></li>
+          <li><a href="form.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Sırasız Liste (Alışveriş Listesi)</h2>
+        <ul>
+          <li>Ekmek</li>
+          <li>Süt</li>
+          <li>Yumurta</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Sıralı Liste (Çay Demleme Adımları)</h2>
+        <ol>
+          <li>Suyu kaynatın.</li>
+          <li>Çaydanlığa çay ekleyin.</li>
+          <li>Kaynar suyu üzerine dökün ve demlenmesini bekleyin.</li>
+        </ol>
+
+        <!-- Çay Görseli -->
+        <img
+          src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=500"
+          alt="Çay Görseli"
+          class="cay-gorsel"
+        />
+      </section>
+    </main>
+  </body>
+</html>
