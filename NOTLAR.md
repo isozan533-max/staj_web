@@ -1,7 +1,41 @@
-# Staj Notlarım
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Staj Projelerim Ana Ekranı</title>
+  </head>
+  <body>
+    <h1>Staj Projelerim Ana Ekranı</h1>
+    <p>
+      Ustam, hazırladığım tüm modüllere aşağıdaki bağlantılardan
+      ulaşabilirsiniz:
+    </p>
 
-## 06.10.2026
+    <h2>📁 01 - HTML Çalışmaları</h2>
+    <ul>
+      <li><a href="yapi.html">Anlamsal Yapı ve Sayfa Tasarımı</a></li>
+      <li><a href="listeler.html">Listeler ve Çay Görseli Örneği</a></li>
+      <li><a href="form.html">İletişim Formu</a></li>
+      <li><a href="medya.html">Medya Sayfası</a></li>
+    </ul>
 
-- Yaptım: Programları kurdum, ilk sayfamı yaptım.
-- Öğrendim: HTML sayfası head ve body'den oluşur.
-- Takıldım: programları kurarken git te takıldım.
+    <h2>📁 02 - CSS Çalışmaları</h2>
+    <ul>
+      <li><a href="../02-css/flexbox.html">Flexbox Yerleşim Örneği</a></li>
+      <li><a href="../02-css/grid.html">CSS Grid Örneği</a></li>
+      <li><a href="../02-css/responsive.html">Responsive Tasarım</a></li>
+    </ul>
+
+    <h2>📁 03 - JavaScript Çalışmaları</h2>
+    <ul>
+      <li><a href="../03-js/dom.html">DOM Manipülasyonu</a></li>
+      <li><a href="../03-js/diziler.html">Diziler (Arrays)</a></li>
+      <li><a href="../03-js/fonksiyonlar.html">Fonksiyonlar</a></li>
+      <li><a href="../03-js/kosullar.html">Koşullu İfadeler (If/Else)</a></li>
+      <li><a href="../03-js/local.html">LocalStorage Kullanımı</a></li>
+      <li><a href="../03-js/form-js.html">Form Doğrulama (JS)</a></li>
+      <li><a href="../03-js/nesneler.html">Nesneler (Objects)</a></li>
+    </ul>
+
+  </body>
+</html>
