@@ -1,35 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Flexbox Düzeni</title>
-  <link rel="stylesheet" href="flexbox.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox ile Canlı Tasarım</title>
+    <link rel="stylesheet" href="flexbox.css" />
+  </head>
+  <body>
+    <!-- Üst Menü -->
+    <header class="ust">
+      <div class="logo">🚀 Staj Web</div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Ana Sayfa</a></li>
+          <li><a href="#">Hakkımda</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header>
-    <h1>Flexbox Düzeni Örneği</h1>
-  </header>
-
-  <main>
-    <section class="flex-konteyner">
-      <div class="flex-kart">
-        <h3>Kart 1</h3>
-        <p>Flexbox ile yan yana sıralanan birinci kart.</p>
-      </div>
-
-      <div class="flex-kart">
-        <h3>Kart 2</h3>
-        <p>Flexbox ile yan yana sıralanan ikinci kart.</p>
-      </div>
-
-      <div class="flex-kart">
-        <h3>Kart 3</h3>
-        <p>Flexbox ile yan yana sıralanan üçüncü kart.</p>
-      </div>
+    <!-- Kartlar Alanı -->
+    <section class="kartlar">
+      <div class="kart">Kart 1: HTML</div>
+      <div class="kart">Kart 2: CSS</div>
+      <div class="kart">Kart 3: JavaScript</div>
+      <div class="kart">Kart 4: React</div>
     </section>
-  </main>
-
-</body>
+  </body>
 </html>
