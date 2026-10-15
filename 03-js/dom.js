@@ -1,18 +1,14 @@
-// HTML elemanlarını seçme
+// 1) HTML elementini ID ile seçme ve içeriğini değiştirme
 let baslik = document.getElementById("baslik");
-let paragraf = document.getElementById("paragraf");
-let btnBaslik = document.getElementById("btnBaslik");
-let btnStil = document.getElementById("btnStil");
+baslik.textContent = "JavaScript ile Güncellenen Başlık!";
 
-// Başlığı Değiştirme Butonu Olayı (Event Listener)
-btnBaslik.addEventListener("click", function () {
-  baslik.textContent = "Başlık JavaScript Tarafından Değiştirildi!";
-  baslik.style.color = "#2980b9";
-});
+// 2) Butona tıklama olayı (Event Listener) ekleme
+let buton = document.getElementById("tiklaBtn");
+let kutu = document.getElementById("renkliKutu");
 
-// Stili Değiştirme Butonu Olayı
-btnStil.addEventListener("click", function () {
-  paragraf.style.backgroundColor = "#2ecc71";
-  paragraf.style.color = "#ffffff";
-  paragraf.style.fontWeight = "bold";
+buton.addEventListener("click", function () {
+  // Kutunun arka plan rengini yeşile çevir ve yazısını güncelle
+  kutu.style.backgroundColor = "#22c55e";
+  kutu.textContent = "Harika, Tıklandı!";
+  console.log("Butona başarıyla tıklandı ve DOM elemanları değiştirildi!");
 });

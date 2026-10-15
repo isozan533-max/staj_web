@@ -1,22 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS DOM Manipülasyonu</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 30px; }
-    #paragraf { padding: 15px; background-color: #eee; margin-top: 10px; border-radius: 5px; }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Manipülasyonu</title>
+    <style>
+      .kutu {
+        width: 220px;
+        height: 100px;
+        background-color: #3b82f6;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        transition: background-color 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="baslik">DOM Manipülasyonuna Hoş Geldiniz</h1>
 
-  <h1 id="baslik">Orijinal Başlık</h1>
-  <p id="paragraf">Bu paragrafın metni ve stili butonlarla değişecek.</p>
+    <div id="renkliKutu" class="kutu">Beni Değiştir</div>
 
-  <button id="btnBaslik">Başlığı Değiştir</button>
-  <button id="btnStil">Stili Değiştir</button>
+    <button id="tiklaBtn">Butona Tıkla</button>
 
-  <script src="dom.js"></script>
-</body>
+    <script src="dom.js"></script>
+  </body>
 </html>
