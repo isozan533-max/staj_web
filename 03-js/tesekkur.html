@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Teşekkürler - Eria Teknoloji</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body,
+      html {
+        height: 100%;
+        font-family: "Arial", sans-serif;
+        overflow: hidden;
+      }
+
+      /* Arka Planda Değişen Manzara Resimleri */
+      .arka-plan {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        animation: arkaPlanDegisimi 15s infinite ease-in-out;
+      }
+
+      /* Manzara Geçiş Animasyonu */
+      @keyframes arkaPlanDegisimi {
+        0% {
+          background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80");
+        }
+        33% {
+          background-image: url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80");
+        }
+        66% {
+          background-image: url("https://images.unsplash.com/photo-1426604966848-d7adacbd02bff?auto=format&fit=crop&w=1920&q=80");
+        }
+        100% {
+          background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80");
+        }
+      }
+
+      /* Sağ Üst Köşe Logo / Yazı */
+      .firma-tag {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      /* Ortadaki Şık Mesaj Kutusu */
+      .kapsayici {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 20px;
+      }
+
+      .mesaj-karti {
+        background: rgba(15, 23, 42, 0.75);
+        backdrop-filter: blur(10px);
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        max-width: 500px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #f8fafc;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        color: #38bdf8;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #cbd5e1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Arka plan katmanı -->
+    <div class="arka-plan"></div>
+
+    <!-- Sağ üst köşe küçük eria teknoloji yazısı -->
+    <div class="firma-tag">eria teknoloji</div>
+
+    <!-- Ortadaki Teşekkür Kartı -->
+    <div class="kapsayici">
+      <div class="mesaj-karti">
+        <h1>Teşekkürler! 🚀</h1>
+        <p>
+          Merhaba, bilgilendirme formunu doldurduğunuz için
+          <b>Ozan Bulmuş</b> size teşekkür ediyor.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
