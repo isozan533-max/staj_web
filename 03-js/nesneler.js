@@ -1,23 +1,17 @@
-// 1. Basit Nesne (Object) Oluşturma
+// Öğrenci bilgilerini içeren nesne (Object)
 let ogrenci = {
-  ad: "ozan",
-  soyad: "bulmuş",
+  ad: "Ozan",
   yas: 16,
-  bolum: "Yazılım Mühendisliği",
+  bolum: "Web Geliştirme",
   stajyerMi: true,
 };
 
-console.log("Öğrenci Adı:", ogrenci.ad);
-console.log("Öğrenci Bölümü:", ogrenci.bolum);
+// Nesne bilgilerini doğrudan ekrandaki HTML div'ine yazdıralım
+let alan = document.getElementById("sonucAlani");
 
-// 2. Nesne Dizisi (Array of Objects)
-let ogrenciler = [
-  { id: 1, ad: "Ahmet", not: 85 },
-  { id: 2, ad: "Ayşe", not: 92 },
-  { id: 3, ad: "Mehmet", not: 60 },
-];
-
-console.log("--- Öğrenci Listesi ---");
-ogrenciler.forEach(function (item) {
-  console.log(`ID: ${item.id} - İsim: ${item.ad} - Not: ${item.not}`);
-});
+alan.innerHTML = `
+    <b>Öğrenci Adı:</b> ${ogrenci.ad} <br>
+    <b>Yaş:</b> ${ogrenci.yas} <br>
+    <b>Bölüm:</b> ${ogrenci.bolum} <br>
+    <b>Staj Durumu:</b> ${ogrenci.stajyerMi ? "Aktif Stajyer 🚀" : "Değil"}
+`;
