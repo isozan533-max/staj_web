@@ -2,76 +2,34 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>İletişim Sayfası</title>
   </head>
   <body>
-    <header>
-      <h1>İletişim Sayfası</h1>
-    </header>
+    <h1>İletişim Sayfası</h1>
+    <h2>Bize Ulaşın</h2>
 
-    <main>
-      <section>
-        <h2>Bize Ulaşın</h2>
-        <form action="#" method="post">
-          <!-- Ad Soyad -->
-          <div>
-            <label for="ad">Ad Soyad:</label><br />
-            <input
-              type="text"
-              id="ad"
-              name="ad"
-              placeholder="Adınızı giriniz"
-              required
-            />
-          </div>
-          <br />
+    <form action="../03-js/tesekkur.html" method="GET">
+      <label for="adsoyad">Ad Soyad:</label><br />
+      <input type="text" id="adsoyad" name="adsoyad" required /><br /><br />
 
-          <!-- E-posta -->
-          <div>
-            <label for="eposta">E-posta Adresi:</label><br />
-            <input
-              type="email"
-              id="eposta"
-              name="eposta"
-              placeholder="ornek@mail.com"
-              required
-            />
-          </div>
-          <br />
+      <label for="eposta">E-posta Adresi:</label><br />
+      <input type="email" id="eposta" name="eposta" required /><br /><br />
 
-          <!-- Konu Seçimi -->
-          <div>
-            <label for="konu">Konu:</label><br />
-            <select id="konu" name="konu">
-              <option value="genel">Genel Bilgi</option>
-              <option value="destek">Teknik Destek</option>
-              <option value="ozneri">Öneri / Şikayet</option>
-            </select>
-          </div>
-          <br />
+      <label for="konu">Konu:</label><br />
+      <select id="konu" name="konu">
+        <option value="teknik">Teknik Destek</option>
+        <option value="bilgi">Genel Bilgi</option>
+        <option value="diger">Diğer</option></select
+      ><br /><br />
 
-          <!-- Mesaj Alanı -->
-          <div>
-            <label for="mesaj">Mesajınız:</label><br />
-            <textarea
-              id="mesaj"
-              name="mesaj"
-              rows="5"
-              cols="30"
-              placeholder="Mesajınızı buraya yazınız..."
-            ></textarea>
-          </div>
-          <br />
+      <label for="mesaj">Mesajınız:</label><br />
+      <textarea id="mesaj" name="mesaj" rows="4" cols="30" required></textarea
+      ><br /><br />
 
-          <!-- Gönder Butonu -->
-          <button type="submit">Gönder</button>
-        </form>
-      </section>
-    </main>
+      <button type="submit">Gönder</button>
+    </form>
 
-    <footer>
-      <p>&copy; 2026 İletişim Sayfası</p>
-    </footer>
+    <br />
+    <p>&copy; 2026 İletişim Sayfası</p>
   </body>
 </html>
