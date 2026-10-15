@@ -1,20 +1,22 @@
-// 1. Parametresiz Fonksiyon
-function selamVer() {
-  alert("Merhaba! JavaScript fonksiyonu başarıyla çalıştı.");
-  console.log("Kullanıcı butona tıkladı ve selam verildi.");
+// 1) Normal Fonksiyon Tanımlama ve Çalıştırma
+function selamla(isim) {
+  console.log("Merhaba, " + isim + "! Hoş geldin.");
 }
 
-// 2. Parametreli Fonksiyon
-function toplamaYap(sayi1, sayi2) {
-  let sonuc = sayi1 + sayi2;
-  alert("Gelen sayıların toplamı: " + sonuc);
-  console.log(`${sayi1} + ${sayi2} = ${sonuc}`);
+selamla("İbrahim");
+selamla("Stajyer");
+
+// 2) Değer Döndüren (Return) Fonksiyon
+function topla(sayi1, sayi2) {
+  return sayi1 + sayi2;
 }
 
-// 3. Değer Döndüren (Return) Fonksiyon
-function karesiniAl(sayi) {
-  return sayi * sayi;
-}
+let sonuc = topla(40, 60);
+console.log("40 ile 60'ın toplamı (Fonksiyon ile):", sonuc);
 
-let hesaplananDeger = karesiniAl(5);
-console.log("5'in karesi:", hesaplananDeger);
+// 3) Ok Fonksiyonu (Arrow Function - Modern JavaScript)
+const carp = (a, b) => {
+  return a * b;
+};
+
+console.log("5 ile 8'in çarpımı (Arrow Function ile):", carp(5, 8));
