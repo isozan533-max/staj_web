@@ -1,19 +1,30 @@
-// Konsola mesaj yazdırma
-console.log("JavaScript dünyasına hoş geldin!");
+let input = document.getElementById("kullaniciInput");
+let buton = document.getElementById("girisBtn");
+let mesaj = document.getElementById("selamlamaMesaji");
 
-// Değişken Tanımlama (let, const)
-let ogrenciAdi = "Ahmet";
-let stajAyi = 2;
-const OKUL = "Web Geliştirme Stajı";
+// Sayfa yüklendiğinde LocalStorage kontrolü
+window.addEventListener("load", function () {
+  let kayitliKullanici = localStorage.getItem("aktifKullanici");
+  if (kayitliKullanici) {
+    mesaj.textContent = "Tekrar hoş geldin, " + kayitliKullanici + "!";
+  }
+});
 
-// Konsolda değişkenleri görüntüleme
-console.log("Öğrenci Adı:", ogrenciAdi);
-console.log("Staj Ayı:", stajAyi);
-console.log("Okul / Kurum:", OKUL);
+// Butona tıklandığında çalışacak fonksiyon
+buton.addEventListener("click", function () {
+  let deger = input.value.trim();
 
-// Basit Matematiksel İşlem ve Konsol Çıktısı
-let sayi1 = 10;
-let sayi2 = 20;
-let toplam = sayi1 + sayi2;
+  if (deger === "") {
+    alert("Lütfen adınızı boş bırakmayın!");
+    return;
+  }
 
-console.log("Toplam Sonucu:", toplam);
+  // LocalStorage'a kaydet
+  localStorage.setItem("aktifKullanici", deger);
+
+  // Ekranda göster
+  mesaj.textContent = "Harika, kaydın alındı: " + deger;
+  input.value = "";
+
+  console.log("Kullanıcı başarıyla kaydedildi ve arayüz güncellendi.");
+});
