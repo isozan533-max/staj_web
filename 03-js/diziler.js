@@ -1,20 +1,16 @@
-// 1. Dizi (Array) Oluşturma
-let diller = ["HTML", "CSS", "JavaScript", "React", "Node.js"];
+// 1) Dizi (Array) Tanımlama
+let teknolojiler = ["HTML", "CSS", "JavaScript", "Git", "React"];
 
-console.log("Toplam Dil Sayısı:", diller.length);
-console.log("İlk Dil:", diller[0]);
+console.log("Tüm teknolojiler dizisi:", teknolojiler);
+console.log("İlk eleman:", teknolojiler[0]); // HTML
+console.log("Dizinin eleman sayısı:", teknolojiler.length);
 
-// 2. Klasik for Döngüsü
-console.log("--- For Döngüsü İle ---");
-for (let i = 0; i < diller.length; i++) {
-  console.log(`${i + 1}. Dil: ${diller[i]}`);
+// 2) Diziye yeni eleman ekleme
+teknolojiler.push("Node.js");
+console.log("Güncel teknoloji listesi:", teknolojiler);
+
+// 3) For Döngüsü ile Diziyi Ekrana Yazdırma
+console.log("--- Teknoloji Listesi Döngüsü ---");
+for (let i = 0; i < teknolojiler.length; i++) {
+  console.log(i + 1 + ". Teknoloji: " + teknolojiler[i]);
 }
-
-// 3. forEach Döngüsü ile HTML Listesine Ekleme
-let ulElemani = document.getElementById("liste");
-
-diller.forEach(function (dil) {
-  let li = document.createElement("li");
-  li.textContent = dil;
-  ulElemani.appendChild(li);
-});
