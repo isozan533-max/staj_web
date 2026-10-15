@@ -1,35 +1,24 @@
-let gorevInput = document.getElementById("gorevInput");
+let input = document.getElementById("gorevInput");
 let ekleBtn = document.getElementById("ekleBtn");
-let gorevListesi = document.getElementById("gorevListesi");
+let liste = document.getElementById("gorevListesi");
 
 ekleBtn.addEventListener("click", function () {
-  let gorevMetni = gorevInput.value.trim();
+  let gorevMetni = input.value.trim();
 
   if (gorevMetni === "") {
-    alert("Lütfen boş bir görev girmeyin!");
+    alert("Lütfen boş bir görev yazmayın!");
     return;
   }
 
-  // 1. Yeni bir li elementi oluştur
-  let li = document.createElement("li");
-  li.textContent = gorevMetni;
+  // Yeni bir <li> elementi oluştur
+  let yeniLi = document.createElement("li");
+  yeniLi.textContent = gorevMetni;
 
-  // 2. Görevi silmek için küçük bir silme butonu oluştur
-  let silBtn = document.createElement("button");
-  silBtn.textContent = "Sil";
-  silBtn.className = "sil-btn";
-
-  // Silme butonuna tıklandığında ilgili li elementini listeden kaldır
-  silBtn.addEventListener("click", function () {
-    li.remove();
-  });
-
-  // 3. Sil butonunu li'nin içine ekle
-  li.appendChild(silBtn);
-
-  // 4. li elementini ana ul listesine ekle
-  gorevListesi.appendChild(li);
+  // Listeye yeni elemanı ekle
+  liste.appendChild(yeniLi);
 
   // Input alanını temizle
-  gorevInput.value = "";
+  input.value = "";
+
+  console.log("Yeni görev eklendi:", gorevMetni);
 });
