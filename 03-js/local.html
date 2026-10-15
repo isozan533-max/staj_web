@@ -1,27 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS Local Storage</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 30px; }
-    .grup { margin-bottom: 15px; }
-    #mesaj { font-weight: bold; color: #27ae60; margin-top: 10px; }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>LocalStorage Kullanımı</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 30px;
+        background-color: #f1f5f9;
+      }
+      .kapsayici {
+        max-width: 400px;
+        margin: 0 auto;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      input {
+        width: 70%;
+        padding: 10px;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        margin-right: 5px;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: #0ea5e9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0284c7;
+      }
+      p {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #334155;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kapsayici">
+      <h2>Tarayıcı Hafızası (LocalStorage)</h2>
+      <input type="text" id="isimInput" placeholder="Adını yaz..." />
+      <button id="kaydetBtn">Kaydet</button>
+      <p id="hosgeldinYazisi"></p>
+    </div>
 
-  <h2>Local Storage (Tarayıcı Hafızası) Örneği</h2>
-  
-  <div class="grup">
-    <input type="text" id="isimInput" placeholder="Adınızı girin...">
-    <button id="kaydetBtn">Kaydet</button>
-    <button id="silBtn">Hafızayı Temizle</button>
-  </div>
-
-  <p id="mesaj"></p>
-
-  <script src="local.js"></script>
-</body>
+    <script src="local.js"></script>
+  </body>
 </html>

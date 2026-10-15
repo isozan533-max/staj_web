@@ -1,29 +1,29 @@
-let isimInput = document.getElementById("isimInput");
+let input = document.getElementById("isimInput");
 let kaydetBtn = document.getElementById("kaydetBtn");
-let silBtn = document.getElementById("silBtn");
-let mesaj = document.getElementById("mesaj");
+let yazisi = document.getElementById("hosgeldinYazisi");
 
-// 1. Sayfa yüklendiğinde daha önce kaydedilmiş veri var mı kontrol et
+// 1) Sayfa ilk açıldığında LocalStorage'da kayıtlı bir veri var mı kontrol et
 let kayitliIsim = localStorage.getItem("kullaniciAdi");
+
 if (kayitliIsim) {
-  mesaj.textContent = `Tekrar hoş geldin, ${kayitliIsim}! (Local Storage'dan yüklendi)`;
+  yazisi.textContent = "Tekrar hoş geldin, " + kayitliIsim + "!";
 }
 
-// 2. Veriyi Kaydetme (setItem)
+// 2) Kaydet butonuna basıldığında veriyi tarayıcının hafızasına kaydet
 kaydetBtn.addEventListener("click", function () {
-  let deger = isimInput.value.trim();
-  if (deger !== "") {
-    localStorage.setItem("kullaniciAdi", deger);
-    mesaj.textContent = `Hoş geldin, ${deger}! Başarıyla kaydedildi.`;
-    isimInput.value = "";
-  } else {
-    alert("Lütfen geçerli bir isim girin!");
-  }
-});
+  let girilenDeger = input.value.trim();
 
-// 3. Veriyi Silme (removeItem)
-silBtn.addEventListener("click", function () {
-  localStorage.removeItem("kullaniciAdi");
-  mesaj.textContent =
-    "Veri hafızadan silindi. Sayfayı yenilersen hatırlandığını göreceksin.";
+  if (girilenDeger === "") {
+    alert("Lütfen bir isim yazın!");
+    return;
+  }
+
+  // LocalStorage'a veri yazma
+  localStorage.setItem("kullaniciAdi", girilenDeger);
+
+  // Ekranda göster
+  yazisi.textContent = "Hoş geldin, " + girilenDeger + "!";
+  input.value = "";
+
+  console.log("İsim LocalStorage'a kaydedildi:", girilenDeger);
 });
