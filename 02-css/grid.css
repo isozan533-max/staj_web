@@ -1,58 +1,51 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
-  padding: 30px;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #2c3e50;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0fdf4;
 }
 
 /* Grid Ana Konteyner */
-.grid-konteyner {
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 eşit sütun oluşturur */
-  gap: 20px; /* Izgara elemanları arası boşluk */
+  grid-template-columns: 200px 1fr; /* 1. Sütun 200px, 2. Sütun Kalan Tüm Alan */
+  gap: 15px; /* Kutular arası boşluk */
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* Grid Eleman Stilleri */
-.grid-eleman {
-  background-color: #3498db;
+/* Ortak Kutu Stili */
+.eleman {
+  background-color: #22c55e;
   color: white;
-  padding: 40px 20px;
-  font-size: 18px;
+  padding: 20px;
   font-weight: bold;
-  text-align: center;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.eleman-1 {
-  background-color: #e74c3c;
+/* Sayfadaki Alan Yayılımları (Grid Spanning) */
+.baslik {
+  grid-column: 1 / -1; /* Baştan sona kadar tüm sütunları kapla */
+  background-color: #15803d;
 }
-.eleman-2 {
-  background-color: #e67e22;
+
+.yan-menü {
+  background-color: #16a34a;
+  min-height: 200px;
 }
-.eleman-3 {
-  background-color: #f1c40f;
-  color: #333;
+
+.icerik {
+  background-color: #4ade80;
+  color: #14532d;
+  min-height: 200px;
 }
-.eleman-4 {
-  background-color: #2ecc71;
-}
-.eleman-5 {
-  background-color: #1abc9c;
-}
-.eleman-6 {
-  background-color: #9b59b6;
+
+.alt-bilgi {
+  grid-column: 1 / -1; /* Baştan sona kadar tüm sütunları kapla */
+  background-color: #111827;
 }
