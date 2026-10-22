@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
@@ -6,11 +6,15 @@ import ManzaraKarti from "./components/ManzaraKarti";
 import SayacKontrolleri from "./components/SayacKontrolleri";
 import GeriBildirim from "./components/GeriBildirim";
 import Navbar from "./components/Navbar";
+import { ThemeContext } from "./context/ThemeContext";
 
 function App() {
   const [sayac, setSayac] = useState(0);
   const [manzaralar, setManzaralar] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  // Global temayı alıyoruz
+  const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
     fetch("https://picsum.photos/v2/list?page=2&limit=30")
@@ -37,8 +41,8 @@ function App() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#0f172a",
-          color: "#38bdf8",
+          backgroundColor: theme === "dark" ? "#0f172a" : "#f1f5f9",
+          color: theme === "dark" ? "#38bdf8" : "#0284c7",
           fontSize: "1.8rem",
           fontWeight: "bold",
           fontFamily: "'Poppins', sans-serif",
@@ -62,8 +66,9 @@ function App() {
         justifyContent: "center",
         padding: "20px",
         fontFamily: "'Poppins', sans-serif",
-        color: "#fff",
-        backgroundColor: "#0f172a",
+        color: theme === "dark" ? "#fff" : "#0f172a",
+        backgroundColor: theme === "dark" ? "#0f172a" : "#f1f5f9",
+        transition: "all 0.3s ease",
       }}
     >
       {/* Üst Menü */}
