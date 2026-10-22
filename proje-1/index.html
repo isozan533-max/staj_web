@@ -2,36 +2,79 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <title>Ana Sayfa - Kişisel Sitem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proje 1 - Ana Sayfa</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #0f172a;
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .card {
+        background: #1e293b;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+      }
+      h1 {
+        background: linear-gradient(45deg, #ff007f, #7928ca, #00dfd8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+      p {
+        color: #94a3b8;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+      .nav-links {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+      }
+      a {
+        padding: 12px 24px;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        background: #0f172a;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+      }
+      a:hover {
+        border-color: #38bdf8;
+        color: #38bdf8;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Benim Kişisel Sitem</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Ana Sayfa</a></li>
-          <li><a href="hakkimda.html">Hakkımda</a></li>
-          <li><a href="iletisim.html">İletişim</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <h2>Hoş Geldiniz!</h2>
+    <div class="card">
+      <h1>Staj Modülü - Proje 1 🚀</h1>
       <p>
-        Merhaba, ben bir stajyer web geliştiricisiyim. Bu site stajımın 1. ay
-        sonu projesidir.
+        HTML5 ve CSS3 temelleri kullanılarak hazırlanan web sayfaları vitrini.
       </p>
-      <p>Aşağıda bu ay öğrendiğim temel konular yer almaktadır:</p>
-      <ul>
-        <li>HTML5 Yapısı ve Anlamsal Etiketler</li>
-        <li>Tablolar ve Formlar</li>
-        <li>Git ve GitHub ile Sürüm Takibi</li>
-      </ul>
-    </main>
 
-    <footer>
-      <p>&copy; 2026 - Tüm hakları saklıdır.</p>
-    </footer>
+      <div class="nav-links">
+        <a href="hakkimda.html">Hakkımda 👤</a>
+        <a href="iletisim.html">İletişim 📩</a>
+      </div>
+    </div>
   </body>
 </html>

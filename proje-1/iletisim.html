@@ -2,41 +2,107 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <title>İletişim - Kişisel Sitem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim | Staj Portfolyosu</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #0f172a;
+        color: #f8fafc;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        alignitems: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .card {
+        background: #1e293b;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 35px;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+      }
+      h1 {
+        background: linear-gradient(45deg, #00dfd8, #007cf0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #94a3b8;
+        font-size: 0.95rem;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: #0f172a;
+        color: #fff;
+        font-size: 1rem;
+        outline: none;
+      }
+      input:focus,
+      textarea:focus {
+        border-color: #38bdf8;
+      }
+      button {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #007cf0, #00dfd8);
+        color: #fff;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        box-shadow: 0 4px 14px rgba(0, 223, 216, 0.3);
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Benim Kişisel Sitem</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Ana Sayfa</a></li>
-          <li><a href="hakkimda.html">Hakkımda</a></li>
-          <li><a href="iletisim.html">İletişim</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <h2>İletişim Formu</h2>
-      <form>
-        <p>
-          <label for="ad">Ad Soyad:</label><br />
-          <input type="text" id="ad" name="ad" required />
-        </p>
-        <p>
-          <label for="eposta">E-posta:</label><br />
-          <input type="email" id="eposta" name="eposta" required />
-        </p>
-        <p>
-          <label for="mesaj">Mesajınız:</label><br />
-          <textarea id="mesaj" name="mesaj" rows="4" cols="30"></textarea>
-        </p>
-        <button type="submit">Gönder</button>
+    <div class="card">
+      <h1>İletişime Geç 📩</h1>
+      <form
+        onsubmit="
+          event.preventDefault();
+          alert('Mesajınız başarıyla gönderildi!');
+        "
+      >
+        <div class="form-group">
+          <label>Adınız Soyadınız</label>
+          <input type="text" placeholder="Örn: Ozan Bulmuş" required />
+        </div>
+        <div class="form-group">
+          <label>E-posta Adresiniz</label>
+          <input type="email" placeholder="ornek@eria.com" required />
+        </div>
+        <div class="form-group">
+          <label>Mesajınız</label>
+          <textarea
+            rows="4"
+            placeholder="Proje hakkında bir şeyler yazın..."
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Mesajı Gönder 🚀</button>
       </form>
-    </main>
-
-    <footer>
-      <p>&copy; 2026 - Tüm hakları saklıdır.</p>
-    </footer>
+    </div>
   </body>
 </html>
