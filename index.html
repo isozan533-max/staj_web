@@ -2,111 +2,33 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Staj Projelerim | Eria Teknoloji</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
-      body {
-        background-color: #0f172a;
-        color: #fff;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px 20px;
-      }
-      h1 {
-        background: linear-gradient(45deg, #ff007f, #7928ca, #00dfd8);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 3rem;
-        margin-bottom: 10px;
-        text-align: center;
-      }
-      .subtitle {
-        color: #94a3b8;
-        margin-bottom: 40px;
-        font-size: 1.1rem;
-        text-align: center;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-        max-width: 900px;
-        width: 100%;
-      }
-      .card {
-        background: #1e293b;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 20px;
-        padding: 30px;
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      .card h2 {
-        color: #38bdf8;
-        font-size: 1.4rem;
-        margin-bottom: 10px;
-      }
-      .card p {
-        color: #94a3b8;
-        font-size: 0.95rem;
-        line-height: 1.5;
-        margin-bottom: 20px;
-      }
-      .btn {
-        display: inline-block;
-        padding: 12px;
-        text-align: center;
-        background: linear-gradient(135deg, #10b981, #059669);
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 10px;
-        box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
-      }
-    </style>
+    <title>Staj Projelerim Ana Ekranı</title>
   </head>
   <body>
-    <h1>Staj Projeleri Portfolyosu ✨</h1>
-    <p class="subtitle">
-      Eria Teknoloji - Web Geliştirme Staj Süreci Çalışmaları
+    <h1>Staj Projelerim Ana Ekranı</h1>
+    <p>
+      Ustam, hazırladığım tüm modüllere aşağıdaki bağlantılardan
+      ulaşabilirsiniz:
     </p>
 
     <div class="grid">
       <div class="card">
-        <div>
-          <h2>01 / HTML & CSS Projesi</h2>
-          <p>
-            Temel HTML yapısı, modern CSS stilleri, Hakkımda ve İletişim
-            sayfaları.
-          </p>
-        </div>
-        <a href="./proje-1/index.html" class="btn">İncele 🚀</a>
+        <h2>01 - HTML & CSS Projesi</h2>
+        <p>
+          Temel HTML yapısı, modern CSS stilleri, Hakkında ve iletişim
+          sayfaları.
+        </p>
+        <a href="./proje-1/index.html" class="btn">İncele</a>
       </div>
 
       <div class="card">
-        <div>
-          <h2>04 / React Sayaç Uygulaması</h2>
-          <p>
-            useState, useEffect, canlı API entegrasyonu ve 100 manzaralı dinamik
-            React uygulaması.
-          </p>
-        </div>
-        <a
-          href="http://localhost:5173"
-          target="_blank"
-          class="btn"
-          style="background: linear-gradient(135deg, #ff007f, #7928ca)"
-          >React Uygulamasını Aç ⚡</a
+        <h2>04 - React Sayaç Uygulaması</h2>
+        <p>
+          useState, useEffect, canlı API entegrasyonu ve 100 modüllü React
+          uygulaması.
+        </p>
+        <a href="../04-react/dist/index.html" target="_blank" class="btn"
+          >React Uygulamasını Aç</a
         >
       </div>
     </div>

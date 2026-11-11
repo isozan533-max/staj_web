@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import ManzaraKarti from "./components/ManzaraKarti";
 import SayacKontrolleri from "./components/SayacKontrolleri";
 import GeriBildirim from "./components/GeriBildirim";
-import Navbar from "./components/Navbar";
+import Navbar from "./Navbar";
 import { ThemeContext } from "./context/ThemeContext";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
   const [manzaralar, setManzaralar] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Global temayı alıyoruz
+  // Global tema
   const { theme } = useContext(ThemeContext);
 
   useEffect(() => {

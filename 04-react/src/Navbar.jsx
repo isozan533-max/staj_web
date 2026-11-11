@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "./context/ThemeContext";
 
 export default function Navbar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -47,13 +47,13 @@ export default function Navbar() {
       <button
         onClick={toggleTheme}
         style={{
+          background: theme === "dark" ? "#334155" : "#cbd5e1",
+          color: theme === "dark" ? "#f8fafc" : "#0f172a",
+          border: "none",
           padding: "8px 14px",
           borderRadius: "8px",
-          border: "none",
           cursor: "pointer",
           fontWeight: "bold",
-          background: theme === "dark" ? "#f8fafc" : "#0f172a",
-          color: theme === "dark" ? "#0f172a" : "#f8fafc",
         }}
       >
         {theme === "dark" ? "☀️ Aydınlık Mod" : "🌙 Karanlık Mod"}
